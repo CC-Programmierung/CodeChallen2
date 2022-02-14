@@ -1,0 +1,26 @@
+Entwerfen Sie erst ein Klassendiagramm und anschliessend ein Java-Programm, welches folgende Anforderungen erfüllt:
+
+Für das Finanzamt eines fiktiven Staates sollen für verschiedene Bevölkerungsgruppen und für Unternehmen, sowie Organisationen die abzuführenden Steuern berechnet werden.
+
+Alle natürlichen Personen(also Bürger) müssen Steuern von 25% auf ihr gesamtes Einkommen zahlen. Arbeiter erhalten dabei einen
+Steuerfreibetrag von 2500€(es wird also erst das gesamte Einkommen mit 25% versteuert, welches darüber liegt).
+Das Einkommen von selbständig tätigen Personen wird mit einem Steuersatz von 30% besteuert.
+
+Unternehmen und andere Institutionen müssen einen ermässigten Steuersatz von 14% abführen, wenn sie mehr als 100 Angestellte haben und
+einen Satz von 20%, bei weniger als 100 Angestellten.
+
+Organisationen wie Stiftungen, Vereine und Parteien müssen gar keine Steuern abführen, da sie im Sinne des Gemeinwohls agieren - 
+es sei denn, ihre Einnahmen liegen über ihren geltend gemachten Ausgaben. Dann müssen diese Überschüssigen Einnahmen mit einem
+Steuersatz von 50% verrechnet werden.
+
+Eine Feature-Klasse soll in diesem Programm für alle steuerpflichtigen, natürlichen UND juristischen Personen eine Methode
+anbieten, welche den jeweiligen abzuführenden Betrag berechnet und zurückgibt.
+
+Zusätzlich soll es in dieser Feature-Klasse eine Methode geben, welche das Gesamteinkommen aller natürlicher/juristischer Personen
+aufsummiert und zurückgibt. An diese Methode sollen alle genannten Personen- und Organisationsgruppen in Form eines Arrays
+übergeben werden können.
+
+Die zu erstellende objektorientierte Struktur soll möglichst elegant und einfach zu benutzen sein. Setzen Sie dafür an den
+ensprechend passenden Stellen Interfaces und Polymorphie ein. 
+
+
