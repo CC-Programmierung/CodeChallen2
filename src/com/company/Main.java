@@ -1,7 +1,10 @@
 package com.company;
 import citizens.*;
+import features.*;
+import company.*;
 
 import company.TestCompany;
+import features.ITax;
 import features.TaxFeatures;
 
 public class Main {
@@ -21,6 +24,22 @@ public class Main {
 
 
 
+        ITax[]elements= new ITax[10];
+        elements[0] = e;
+        elements[1] = te;
+        ITax[] arr ={e,te};
 
+        System.out.println("Gesamtsteuern: " + totalTax(elements));
+
+    }
+
+    public static double totalTax(ITax[] t){
+        double totalTax = 0;
+        for(int i = 0; i< t.length;i++){
+            if(t[i] != null){
+                totalTax += TaxFeatures.calculateCitizenTax(t[i]);
+            }
+        }
+        return totalTax;
     }
 }
